@@ -20,20 +20,21 @@ function hideloader() {
 
 
 function show(data) {
-    let tab = `<tr>
-    <th>name</th>
-    <th>model</th>
-    <th>manufacturer</th>`;
+    let dataItems = `
+    <div class="span-col-2">Star Wars Space Ships</div>
+    <div class="col">name</div>
+    <div class="col">model</div>
+    <div class="col">manufacturer</div>`;
 
     for (const ship of data.results){
-        tab += `<tr>
-        <td>${ship.name}</td>
-        <td>${ship.model}</td>
-        <td>${ship.manufacturer}</td></tr>`;
+        dataItems += `
+        <div>${ship.name}</div>
+        <div>${ship.model}</div>
+        <div>${ship.manufacturer}</div>`;
     }
    
 
 
-    document.getElementById("spaceships").innerHTML = tab;
+    document.getElementById("container").innerHTML = dataItems;
 
 }
