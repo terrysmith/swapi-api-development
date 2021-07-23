@@ -22,9 +22,9 @@ function hideloader() {
 function show(data) {
     let dataItems = `
     <div class="span-col-2">Star Wars Space Ships</div>
-    <div class="col">name</div>
-    <div class="col">model</div>
-    <div class="col">manufacturer</div>`;
+    <div class="col">Name</div>
+    <div class="col">Model</div>
+    <div class="col">Manufacturer</div>`;
 
     for (const ship of data.results){
         dataItems += `
